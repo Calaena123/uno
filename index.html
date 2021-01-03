@@ -4,11 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uno Game!</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <h1 class="text-center game-box">Let's Play</h1>
+    <div class="row game-box">
+        <div class="col-sm-3 offset-sm-3">
+            <div class="uno-player-box">
+                <img src="images/player-1.jpg" class="img-fluid">
+                <p class="score-1">
+                    0
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="number" class="form-control input-1" placeholder="Enter Score">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="uno-player-box">
+                <img src="images/player-2.jpg" class="img-fluid">
+                <p class="score-2">
+                    0
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="number" class="form-control input-2" placeholder="Enter Score">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="winner-box">
+        <h1 class="text-center">Winner</h1>
+        <div class="player-1">
+            <img src="images/player-1.jpg" class="img-fluid">
+            <h1 class="text-center">Dinesh Sucks</h1>
+        </div>
+        <div class="player-2">
+            <img src="images/player-2.jpg" class="img-fluid">
+            <h1 class="text-center">Better Luck Next Time Reddy</h1>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary game-box">Add</button>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
